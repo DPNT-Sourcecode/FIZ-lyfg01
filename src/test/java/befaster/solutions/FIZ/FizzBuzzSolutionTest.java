@@ -17,20 +17,20 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnFizzIfMultipleOfThree() {
-        String result = fizzBuzzSolution.fizzBuzz(3);
+        String result = fizzBuzzSolution.fizzBuzz(6);
         assertEquals(result, "fizz");
     }
 
     @Test
     public void shouldReturnBuzzIfMultipleOfFive() {
-        String result = fizzBuzzSolution.fizzBuzz(25);
+        String result = fizzBuzzSolution.fizzBuzz(10);
         assertEquals(result, "buzz");
     }
 
     @Test
     public void shouldReturnFizzBuzzIfMultipleOfThreeAndFive() {
         String result = fizzBuzzSolution.fizzBuzz(45);
-        assertEquals(result, "fizz buzz");
+        assertEquals("buzz deluxe", result);
     }
 
     @Test
@@ -53,17 +53,6 @@ public class FizzBuzzSolutionTest {
     @Test
     public void shouldReturnFizzBuzzIfContainsBoth3And5InNumber() {
         assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(35));
-    }
-
-
-    @Test
-    public void shouldReturnFakeDeluxeIfOddAndDeluxe() {
-        assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(1111));
-    }
-
-    @Test
-    public void shouldReturnDeluxeIfEvenAndDeluxe() {
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
     }
 
 
