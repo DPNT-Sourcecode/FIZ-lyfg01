@@ -9,7 +9,7 @@ import static befaster.runner.Utils.getConfig;
 import static befaster.runner.Utils.getRunnerConfig;
 
 public class SendCommandToServer {
-    /**
+    /**pause
      * ~~~~~~~~~~ Running the system: ~~~~~~~~~~~~~
      *deploy
      *   From IDE:
