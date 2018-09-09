@@ -74,8 +74,18 @@ public class FizzBuzzSolutionTest {
 
 
     @Test
-    public void shouldReturnFizzDeluxeIfDivisibleBy3AndHas3InIt() {
+    public void shouldReturnFizzFakeDeluxeIfDivisibleBy3AndHas3InItAndIsOdd() {
         assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(33));
+    }
+
+    @Test
+    public void shouldReturnFizzBuzzDeluxeIfDivisibleBy3AndHas3InItAndIsEven() {
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(30));
+    }
+
+    @Test
+    public void shouldReturnFizzDeluxeIfDivisibleBy3AndHas3InIt() {
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(55));
     }
 
 }
