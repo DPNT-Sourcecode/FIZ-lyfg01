@@ -18,15 +18,11 @@ public class FizzBuzzSolution {
             sb.append("buzz");
             sb.append(" ");
         }
-        if ((number % 3 == 0) && (valueOf(number).contains("3")) ||
-                (number % 5 == 0) && (valueOf(number).contains("5"))
-        ) {
-            if (number % 2 != 0) {
-                sb.append("fake");
-                sb.append(" ");
-            }
-            sb.append("deluxe");
-            sb.append(" ");
+        if ((number % 3 == 0) && (valueOf(number).contains("3"))) {
+            return "fizz deluxe";
+        }
+        if ((number % 5 == 0) && (valueOf(number).contains("5"))) {
+            return "buzz deluxe";
         }
 
         if (sb.toString().isEmpty()) {

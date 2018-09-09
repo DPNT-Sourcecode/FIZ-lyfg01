@@ -52,7 +52,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnFizzBuzzIfContainsBoth3And5InNumber() {
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(35));
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(35));
     }
 
 
@@ -72,16 +72,12 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
     }
 
-
     @Test
-    public void shouldReturnFizzFakeDeluxeIfDivisibleBy3AndHas3InItAndIsOdd() {
-        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(33));
+    public void shouldReturnBuzzDeluxeIfDivisibleBy5AndHas5InIt() {
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(55));
     }
 
-    @Test
-    public void shouldReturnFizzBuzzDeluxeIfDivisibleBy3AndHas3InItAndIsEven() {
-        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(30));
-    }
+
 
 
 }
