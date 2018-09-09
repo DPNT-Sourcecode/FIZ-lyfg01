@@ -7,9 +7,6 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
         StringBuilder sb = new StringBuilder();
 
-        if (isDeluxe(number) && isOdd(number)) {
-            return "fake deluxe";
-        }
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
             sb.append("fizz");
             sb.append(" ");
@@ -19,6 +16,10 @@ public class FizzBuzzSolution {
             sb.append(" ");
         }
         if (isDeluxe(number)) {
+            if (isOdd(number)) {
+                sb.append("fake");
+                sb.append(" ");
+            }
             sb.append("deluxe");
             sb.append(" ");
         }
