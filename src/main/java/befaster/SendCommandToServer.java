@@ -28,7 +28,7 @@ public class SendCommandToServer {
      *        * You are presented with your current progress and a list of actions.
      *        * You trigger one of the actions by typing it on the console.
      *        * After the action feedback is presented, the execution will stop.
-     *
+     *star
      *   +------+-------------------------------------------------------------+
      *   | Step | The usual workflow                                          |
      *   +------+-------------------------------------------------------------+

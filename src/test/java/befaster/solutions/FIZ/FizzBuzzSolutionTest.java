@@ -68,8 +68,8 @@ public class FizzBuzzSolutionTest {
 
 
     @Test
-    public void shouldReturnDeluxeIfGreaterThan10AndIncludesAllIdenticalDigits() {
-        assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(1111));
+    public void shouldReturnFizzDeluxeIfDivisibleBy3AndHas3InIt() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
     }
 
 
@@ -83,9 +83,5 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(30));
     }
 
-    @Test
-    public void shouldReturnFizzDeluxeIfDivisibleBy3AndHas3InIt() {
-        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(55));
-    }
 
 }
