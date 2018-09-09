@@ -9,7 +9,6 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
 
-
         StringBuilder sb = new StringBuilder();
 
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
