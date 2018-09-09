@@ -8,7 +8,6 @@ import static java.lang.String.valueOf;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
-
         StringBuilder sb = new StringBuilder();
 
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
@@ -37,18 +36,5 @@ public class FizzBuzzSolution {
         return sb.toString().trim();
     }
 
-    private boolean containsIdenticalDigits(Integer number) {
-
-        List<Integer> digits = new ArrayList<>();
-
-        while (number > 0) {
-            digits.add(number % 10);
-            number = number / 10;
-        }
-
-        return digits.stream().allMatch(digits.get(0)::equals);
-
-
-    }
 
 }
