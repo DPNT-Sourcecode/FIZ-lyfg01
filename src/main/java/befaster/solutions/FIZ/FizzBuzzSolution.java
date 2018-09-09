@@ -31,6 +31,8 @@ public class FizzBuzzSolution {
             return "buzz";
         } else if (isFizz) {
             return "fizz";
+        } else if (isDeluxe) {
+            return "deluxe";
         }
         return valueOf(number);
     }

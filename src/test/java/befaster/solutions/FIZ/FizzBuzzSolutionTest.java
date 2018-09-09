@@ -60,4 +60,9 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnDeluxeIfGreaterThan10AndIncludesAllIdenticalDigits() {
         assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(1111));
     }
+
+    @Test
+    public void shouldReturnFizzBuzzDeluxe() {
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(1135));
+    }
 }
