@@ -38,4 +38,15 @@ public class FizzBuzzSolutionTest {
         String result = fizzBuzzSolution.fizzBuzz(46);
         assertEquals(result, "46");
     }
+
+
+    @Test
+    public void shouldReturnFizzIfContains3InNumber() {
+        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
+    }
+
+    @Test
+    public void shouldReturnFizzIfContains5InNumber() {
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(55));
+    }
 }

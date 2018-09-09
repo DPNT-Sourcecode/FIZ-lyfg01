@@ -11,7 +11,7 @@ import static befaster.runner.Utils.getRunnerConfig;
 public class SendCommandToServer {
     /**
      * ~~~~~~~~~~ Running the system: ~~~~~~~~~~~~~
-     *
+     *deploy
      *   From IDE:
      *      Run this file from the IDE.
      *
