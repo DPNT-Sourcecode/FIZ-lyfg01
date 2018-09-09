@@ -19,13 +19,15 @@ public class FizzBuzzSolution {
             sb.append(" ");
         }
         if ((number % 3 == 0) && (valueOf(number).contains("3"))) {
+            if (number % 2 != 0) {
+                return "fake deluxe";
+            }
             return "fizz deluxe";
         }
         if ((number % 5 == 0) && (valueOf(number).contains("5"))) {
             if (number % 2 != 0) {
                 return "fake deluxe";
             }
-
             return "buzz deluxe";
         }
 

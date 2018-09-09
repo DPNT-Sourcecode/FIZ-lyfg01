@@ -27,11 +27,6 @@ public class FizzBuzzSolutionTest {
         assertEquals(result, "buzz");
     }
 
-    @Test
-    public void shouldReturnFizzBuzzIfMultipleOfThreeAndFive() {
-        String result = fizzBuzzSolution.fizzBuzz(45);
-        assertEquals("buzz deluxe", result);
-    }
 
     @Test
     public void shouldReturnNumber() {
@@ -45,20 +40,15 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
     }
 
-    @Test
-    public void shouldReturnFizzIfContains5InNumber() {
-        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(55));
-    }
 
     @Test
-    public void shouldReturnFizzBuzzIfContainsBoth3And5InNumber() {
-        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(35));
+    public void shouldReturnFakeDeluxeIfDivisibleBy3AndHas3InItAndIsOdd() {
+        assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(33));
     }
-
 
     @Test
     public void shouldReturnFizzDeluxeIfDivisibleBy3AndHas3InIt() {
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(30));
     }
 
     @Test
