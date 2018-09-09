@@ -8,34 +8,21 @@ import static java.lang.String.valueOf;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
-
-        boolean isFizz = false;
-        boolean isBuzz = false;
-        boolean isDeluxe = false;
-
         StringBuilder sb = new StringBuilder();
 
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
             sb.append("fizz");
+            sb.append(" ");
         }
         if ((number % 5 == 0) || (valueOf(number).contains("5"))) {
-            isBuzz = true;
+            sb.append("buzz");
+            sb.append(" ");
         }
         if ((number > 10) && containsIdenticalDigits(number)) {
-            isDeluxe = true;
+            sb.append("deluxe");
+            sb.append(" ");
         }
-
-        if (isBuzz && isFizz || (number % 15 == 0)) {
-            return "fizz buzz";
-        } else if (isBuzz && isFizz && isDeluxe) {
-            return "fizz buzz deluxe";
-        } else if (isBuzz) {
-            return "buzz";
-        } else if (isFizz) {
-            return "fizz";
-        } else if (isDeluxe) {
-            return "deluxe";
-        }
+        return
         return valueOf(number);
     }
 
