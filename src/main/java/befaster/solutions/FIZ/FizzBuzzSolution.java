@@ -8,6 +8,8 @@ import static java.lang.String.valueOf;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
+
+
         StringBuilder sb = new StringBuilder();
 
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
@@ -22,8 +24,12 @@ public class FizzBuzzSolution {
             sb.append("deluxe");
             sb.append(" ");
         }
-        return
-        return valueOf(number);
+
+        if (sb.toString().isEmpty()) {
+            return valueOf(number);
+        }
+
+        return sb.toString().trim();
     }
 
     private boolean containsIdenticalDigits(Integer number) {

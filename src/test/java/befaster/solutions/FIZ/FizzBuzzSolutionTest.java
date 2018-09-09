@@ -47,7 +47,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnFizzIfContains5InNumber() {
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(55));
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(55));
     }
 
     @Test
