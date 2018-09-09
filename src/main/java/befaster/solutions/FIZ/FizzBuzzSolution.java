@@ -1,8 +1,5 @@
 package befaster.solutions.FIZ;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static java.lang.String.valueOf;
 
 public class FizzBuzzSolution {
