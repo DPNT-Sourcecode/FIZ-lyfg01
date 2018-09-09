@@ -15,9 +15,9 @@ public class HelloSolutionTest {
     }
 
     @Test
-    public void shouldReturnHelloWorld() {
+    public void shouldReturnHelloPaul() {
         String result = helloSolution.hello("Paul");
-        assertEquals(result, "Hello, World!");
+        assertEquals(result, "Hello, Paul!");
 
     }
 }
