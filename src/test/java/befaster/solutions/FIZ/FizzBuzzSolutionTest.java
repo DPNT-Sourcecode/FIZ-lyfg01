@@ -60,6 +60,11 @@ public class FizzBuzzSolutionTest {
         assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(55));
     }
 
+    @Test
+    public void shouldReturnFizzBuzzDeluxe() {
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(130));
+    }
+
 
 
 
