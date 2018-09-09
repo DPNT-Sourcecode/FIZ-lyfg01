@@ -6,8 +6,10 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         StringBuilder sb = new StringBuilder();
-        boolean isDeluxe = false;
 
+        if (isDeluxe(number) && isOdd(number)) {
+            return "fake deluxe";
+        }
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
             sb.append("fizz");
             sb.append(" ");
@@ -16,30 +18,29 @@ public class FizzBuzzSolution {
             sb.append("buzz");
             sb.append(" ");
         }
-        if ((number % 3 == 0) && (valueOf(number).contains("3"))) {
-            isDeluxe = true;
-            if (number % 2 != 0) {
-                return "fake deluxe";
-            }
-            return "fizz deluxe";
+        if (isDeluxe(number)) {
+            sb.append("deluxe");
+            sb.append(" ");
         }
-        if ((number % 5 == 0) && (valueOf(number).contains("5"))) {
-
-            isDeluxe = true;
-            if (number % 2 != 0) {
-                return "fake deluxe";
-            }
-            return "buzz deluxe";
-        }
-
         if (sb.toString().isEmpty()) {
             return valueOf(number);
         }
-        else if (sb.toString().contains("fizz buzz") && isDeluxe) {
-            return "fizz buzz deluxe";
-        }
-
         return sb.toString().trim();
+    }
+
+
+    private boolean isDeluxe(int number) {
+        if ((number % 5 == 0) && (valueOf(number).contains("5"))) {
+            return true;
+        }
+        if ((number % 3 == 0) && (valueOf(number).contains("3"))) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean isOdd(int number) {
+        return number % 2 != 0;
     }
 
 
