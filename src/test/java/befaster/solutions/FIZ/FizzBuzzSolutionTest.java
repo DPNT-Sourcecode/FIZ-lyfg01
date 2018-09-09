@@ -63,6 +63,6 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnFizzBuzzDeluxe() {
-        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(3333));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
     }
 }
