@@ -54,4 +54,10 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnFizzBuzzIfContainsBoth3And5InNumber() {
         assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(35));
     }
+
+
+    @Test
+    public void shouldReturnDeluxeIfGreaterThan10AndIncludesAllIdenticalDigits() {
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(1111));
+    }
 }
