@@ -13,8 +13,10 @@ public class FizzBuzzSolution {
         boolean isBuzz = false;
         boolean isDeluxe = false;
 
+        StringBuilder sb = new StringBuilder();
+
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
-            isFizz = true;
+            sb.append("fizz");
         }
         if ((number % 5 == 0) || (valueOf(number).contains("5"))) {
             isBuzz = true;
