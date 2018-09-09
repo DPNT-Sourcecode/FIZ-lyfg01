@@ -63,7 +63,11 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnBuzzDeluxeIfDivisibleBy5AndHas5InIt() {
-        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(55));
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(50));
+    }
+    @Test
+    public void shouldReturnFakeDeluxeIfDeluxeIsOdd() {
+        assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(55));
     }
 
 

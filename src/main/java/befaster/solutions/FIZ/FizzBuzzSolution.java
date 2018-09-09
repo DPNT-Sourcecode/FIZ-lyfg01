@@ -22,6 +22,10 @@ public class FizzBuzzSolution {
             return "fizz deluxe";
         }
         if ((number % 5 == 0) && (valueOf(number).contains("5"))) {
+            if (number % 2 != 0) {
+                return "fake deluxe";
+            }
+
             return "buzz deluxe";
         }
 
