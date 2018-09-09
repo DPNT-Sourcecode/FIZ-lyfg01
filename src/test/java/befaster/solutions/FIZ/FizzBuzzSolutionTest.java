@@ -47,7 +47,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnFizzIfContains5InNumber() {
-        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(55));
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(55));
     }
 
     @Test
@@ -57,13 +57,24 @@ public class FizzBuzzSolutionTest {
 
 
     @Test
+    public void shouldReturnFakeDeluxeIfOddAndDeluxe() {
+        assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(1111));
+    }
+
+    @Test
+    public void shouldReturnDeluxeIfEvenAndDeluxe() {
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
+    }
+
+
+    @Test
     public void shouldReturnDeluxeIfGreaterThan10AndIncludesAllIdenticalDigits() {
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(1111));
+        assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(1111));
     }
 
     @Test
     public void shouldReturnFizzBuzzDeluxe() {
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(33));
     }
 
     @Test

@@ -20,6 +20,10 @@ public class FizzBuzzSolution {
             sb.append(" ");
         }
         if ((number > 10) && containsIdenticalDigits(number)) {
+            if (number % 2 != 0) {
+                sb.append("fake");
+                sb.append(" ");
+            }
             sb.append("deluxe");
             sb.append(" ");
         }
