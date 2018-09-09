@@ -11,7 +11,8 @@ public class FizzBuzzSolution {
 
         if ((number % 3 == 0) || (valueOf(number).contains("3"))) {
             isFizz = true;
-        } else if ((number % 5 == 0) || (valueOf(number).contains("5"))) {
+        }
+        if ((number % 5 == 0) || (valueOf(number).contains("5"))) {
             isBuzz = true;
         }
 
