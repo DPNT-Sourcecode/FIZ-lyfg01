@@ -65,4 +65,10 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnFizzBuzzDeluxe() {
         assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
     }
+
+    @Test
+    public void shouldReturnFakeDeluxeForOddDeluxe() {
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(33));
+    }
+
 }
